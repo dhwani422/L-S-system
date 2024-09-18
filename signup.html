@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to right, #a700fb, #e800fd);
+        }
+
+        .auth-container {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .auth-box {
+            width: 50%;
+            padding: 60px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .auth-box h2 {
+            margin-bottom: 30px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        form label {
+            display: block;
+            text-align: left;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        form input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        form input:focus {
+            border-color: #74ebd5;
+            outline: none;
+        }
+
+        button.btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button.btn:hover {
+            background-color: #555;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .auth-container {
+                flex-direction: column;
+            }
+
+            .auth-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="auth-container">
+    <!-- Sign-Up Box -->
+    <div class="auth-box">
+        <h2>Sign Up</h2>
+        <form action="#" method="POST" class="signup-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email-signup">Email</label>
+            <input type="email" id="email-signup" name="email" required>
+            
+            <label for="password-signup">Password</label>
+            <input type="password" id="password-signup" name="password" required>
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            
+            <button type="submit" class="btn">Sign Up</button>
+            <a href="login.html" class="forgot-password">Already have an account? Login</a>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.signup-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Signup functionality not implemented.');
+    });
+</script>
+
+</body>
+</html>
